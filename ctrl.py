@@ -27,8 +27,11 @@ class Control:
     def mul(self, a, b):
         return a*b
     
-    def div(self, a, b):
-        return a/b
+    def div(self, a, b): # div 함수 수정
+        if (b==0):
+            return 0
+        else:
+            return a/b
     
     def pow(self, a, b):
         return pow(a, b)
